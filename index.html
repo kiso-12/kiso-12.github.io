@@ -3,74 +3,117 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ポートフォリオ - Home</title>
-  <!-- Google Fonts を利用（必要に応じて変更してください） -->
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+  <title>ポートフォリオ</title>
+  <style>
+    /* 全体のスタイル */
+    body {
+      background-color: lightblue; /* 水色の背景 */
+      margin: 0;
+      font-family: Arial, sans-serif;
+      color: #333;
+      line-height: 1.6;
+    }
+    
+    /* ヘッダー・メニューエリア */
+    header {
+      background-color: rgba(255, 255, 255, 0.85);
+      padding: 20px;
+      position: sticky;
+      top: 0;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      /* 将来的にメニュー項目を追加するためのスペース */
+    }
+    
+    nav a {
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+    
+    nav a:hover {
+      color: #555;
+    }
+    
+    /* メインコンテンツ */
+    main {
+      padding: 20px;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    
+    .section {
+      background-color: rgba(255, 255, 255, 0.85);
+      margin-bottom: 40px;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    
+    .section h2 {
+      margin-top: 0;
+    }
+    
+    /* フッター */
+    footer {
+      background-color: rgba(255, 255, 255, 0.85);
+      text-align: center;
+      padding: 20px;
+      box-shadow: 0 -2px 4px rgba(0,0,0,0.1);
+    }
+    
+    /* 将来的な拡張用のメニュー・プレースホルダースタイル */
+    .menu-placeholder {
+      /* ここにメディアクエリなどの詳細なスタイルを追加可能 */
+    }
+  </style>
 </head>
 <body>
-
-  <!-- ヘッダー・固定ナビゲーション -->
   <header>
+    <!-- サイトロゴやタイトル、後ほど書き換え可能なメニューをここに配置 -->
+    <h1>ポートフォリオサイト</h1>
     <nav>
-      <div class="logo"><!-- ここにブランド名やあなたの名前を入力 -->My Portfolio</div>
-      <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
+      <!-- 例: 以下のコメントアウトを外し、それぞれのセクションへのリンクに変更してください。 -->
+      <!-- <a href="#about">自己紹介</a> -->
+      <!-- <a href="#works">作品紹介</a> -->
+      <!-- <a href="#contact">連絡先</a> -->
     </nav>
-    
-    <!-- ヒーローセクション -->
-    <div class="hero">
-      <h1><!-- ここにキャッチフレーズやあなたの名前を入力 -->Welcome to My World</h1>
-      <p><!-- ここにウェルカムメッセージを入力 -->A creative portfolio showcasing my work.</p>
-      <a class="btn" href="projects.html">Explore My Projects</a>
-    </div>
   </header>
 
-  <!-- メインコンテンツ -->
   <main>
-    <!-- About Preview -->
-    <section class="about-preview">
-      <h2>About Me</h2>
-      <p><!-- ここに自己紹介の短い概要を入力してください --></p>
-      <a class="btn" href="about.html">Learn More</a>
+    <section class="section" id="about">
+      <!-- ここに自己紹介やプロフィールの情報を記載 -->
+      <h2>自己紹介</h2>
+      <p>
+        <!-- ここに自己紹介のテキストを入力してください -->
+      </p>
     </section>
 
-    <!-- Projects Preview -->
-    <section class="projects-preview">
-      <h2>Featured Projects</h2>
-      <div class="project-cards">
-        <div class="card">
-          <!-- 画像はご自身のものに差し替えてください -->
-          <img src="your-image1.jpg" alt="Project 1">
-          <div class="card-content">
-            <h3>プロジェクト名1</h3>
-            <p><!-- プロジェクトの概要を入力 --></p>
-            <a class="btn" href="project-detail1.html">View Details</a>
-          </div>
-        </div>
-        <div class="card">
-          <img src="your-image2.jpg" alt="Project 2">
-          <div class="card-content">
-            <h3>プロジェクト名2</h3>
-            <p><!-- プロジェクトの概要を入力 --></p>
-            <a class="btn" href="project-detail2.html">View Details</a>
-          </div>
-        </div>
-      </div>
+    <section class="section" id="works">
+      <!-- ここに制作物や作品の情報を記載 -->
+      <h2>作品紹介</h2>
+      <p>
+        <!-- ここに作品の説明を入力してください -->
+      </p>
+    </section>
+
+    <section class="section" id="contact">
+      <!-- ここに連絡先やお問い合わせフォームの情報を記載 -->
+      <h2>連絡先</h2>
+      <p>
+        <!-- ここに連絡先情報や問い合わせ方法を入力してください -->
+      </p>
     </section>
   </main>
 
-  <!-- フッター -->
   <footer>
-    <p>&copy; 2025 <!-- ここにあなたの名前を入力 -->Your Name. All Rights Reserved.</p>
+    <p>&copy; 2025 あなたの名前 <!-- 必要に応じて名前を変更してください --></p>
   </footer>
-
 </body>
 </html>
-</body>
-</html>
-
