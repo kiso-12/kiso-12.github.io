@@ -1,45 +1,41 @@
-/* styles.css */
-body {
-  font-family: 'Arial', sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #f4f4f4;
-  color: #333;
-}
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About - ポートフォリオ</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-header {
-  background-color: #4CAF50;
-  color: white;
-  text-align: center;
-  padding: 1rem;
-}
+  <!-- ヘッダー：サイト名とナビゲーション -->
+  <header>
+    <h1><!-- ここにあなたの名前やブランド名を入力してください -->My Portfolio</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-h1, h2 {
-  text-align: center;
-}
+  <!-- メインコンテンツ -->
+  <main>
+    <section id="about">
+      <h2>About Me</h2>
+      <p><!-- ここにあなたの経歴、スキル、背景などの情報を入力してください --></p>
+    </section>
+  </main>
 
-main {
-  max-width: 800px;
-  margin: 20px auto;
-  padding: 20px;
-  background: white;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  border-radius: 10px;
-}
+  <!-- フッター -->
+  <footer>
+    <p>&copy; 2025 <!-- ここにあなたの名前を入力してください -->Your Name. All Rights Reserved.</p>
+  </footer>
 
-section {
-  margin-bottom: 20px;
-}
-
-footer {
-  text-align: center;
-  padding: 10px;
-  background-color: #4CAF50;
-  color: white;
-  position: fixed;
-  width: 100%;
-  bottom: 0;
-}
+</body>
+</html>
 
 
 
