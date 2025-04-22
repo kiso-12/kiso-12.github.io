@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact - ポートフォリオ</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ヘッダー：サイト名とナビゲーション -->
+  <header>
+    <h1><!-- ここにあなたの名前やブランド名を入力してください -->My Portfolio</h1>
+    <nav>
+      <ul>
+         <li><a href="index.html">Home</a></li>
+         <li><a href="about.html">About</a></li>
+         <li><a href="projects.html">Projects</a></li>
+         <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- メインコンテンツ -->
+  <main>
+    <section id="contact">
+      <h2>Contact</h2>
+      <p><!-- ここに連絡先情報や問い合わせ方法を入力してください --></p>
+      
+      <!-- お問い合わせフォームの例 -->
+      <form action="contact_process.php" method="post">
+         <label for="name">名前:</label>
+         <input type="text" id="name" name="name">
+         
+         <label for="email">メールアドレス:</label>
+         <input type="email" id="email" name="email">
+         
+         <label for="message">メッセージ:</label>
+         <textarea id="message" name="message"></textarea>
+         
+         <button type="submit">送信</button>
+      </form>
+    </section>
+  </main>
+
+  <!-- フッター -->
+  <footer>
+    <p>&copy; 2025 <!-- ここにあなたの名前を入力してください -->Your Name. All Rights Reserved.</p>
+  </footer>
+
+</body>
+</html>
