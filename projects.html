@@ -4,15 +4,16 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Projects - ポートフォリオ</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <!-- ヘッダー：サイト名とナビゲーション -->
+  <!-- 固定ナビゲーション -->
   <header>
-    <h1><!-- ここにあなたの名前やブランド名を入力してください -->My Portfolio</h1>
     <nav>
-      <ul>
+      <div class="logo"><!-- ここにブランド名やあなたの名前を入力 -->My Portfolio</div>
+      <ul class="nav-links">
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="projects.html">Projects</a></li>
@@ -22,31 +23,34 @@
   </header>
 
   <!-- メインコンテンツ -->
-  <main>
-    <section id="projects">
+  <main class="content">
+    <section class="projects-content">
       <h2>Projects</h2>
-      <p><!-- ここにプロジェクトの概要、リンク、画像などを入力してください --></p>
-      
-      <!-- プロジェクトアイテムの例 -->
-      <div class="project-item">
-         <h3>プロジェクト名1</h3>
-         <p><!-- プロジェクトの説明を入力してください --></p>
-         <a href="project-detail1.html">詳しく見る</a>
+      <div class="project-cards-full">
+        <div class="card">
+          <img src="your-image1.jpg" alt="Project 1">
+          <div class="card-content">
+            <h3>プロジェクト名1</h3>
+            <p><!-- プロジェクトの詳細な説明を入力してください --></p>
+            <a class="btn" href="project-detail1.html">View Details</a>
+          </div>
+        </div>
+        <div class="card">
+          <img src="your-image2.jpg" alt="Project 2">
+          <div class="card-content">
+            <h3>プロジェクト名2</h3>
+            <p><!-- プロジェクトの詳細な説明を入力してください --></p>
+            <a class="btn" href="project-detail2.html">View Details</a>
+          </div>
+        </div>
+        <!-- 必要に応じてプロジェクトを追加してください -->
       </div>
-      
-      <div class="project-item">
-         <h3>プロジェクト名2</h3>
-         <p><!-- プロジェクトの説明を入力してください --></p>
-         <a href="project-detail2.html">詳しく見る</a>
-      </div>
-      
-      <!-- プロジェクトの追加は必要に応じて行ってください -->
     </section>
   </main>
 
   <!-- フッター -->
   <footer>
-    <p>&copy; 2025 <!-- ここにあなたの名前を入力してください -->Your Name. All Rights Reserved.</p>
+    <p>&copy; 2025 <!-- ここにあなたの名前を入力 -->Your Name. All Rights Reserved.</p>
   </footer>
 
 </body>
