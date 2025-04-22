@@ -4,36 +4,69 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ポートフォリオ - Home</title>
+  <!-- Google Fonts を利用（必要に応じて変更してください） -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <!-- ヘッダー：サイト名とナビゲーション -->
+  <!-- ヘッダー・固定ナビゲーション -->
   <header>
-    <h1><!-- ここにあなたの名前やブランド名を入力してください -->My Portfolio</h1>
     <nav>
-      <ul>
+      <div class="logo"><!-- ここにブランド名やあなたの名前を入力 -->My Portfolio</div>
+      <ul class="nav-links">
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="projects.html">Projects</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
     </nav>
+    
+    <!-- ヒーローセクション -->
+    <div class="hero">
+      <h1><!-- ここにキャッチフレーズやあなたの名前を入力 -->Welcome to My World</h1>
+      <p><!-- ここにウェルカムメッセージを入力 -->A creative portfolio showcasing my work.</p>
+      <a class="btn" href="projects.html">Explore My Projects</a>
+    </div>
   </header>
 
   <!-- メインコンテンツ -->
   <main>
-    <section id="intro">
-      <h2>Welcome!</h2>
-      <p><!-- ここに自己紹介文やウェルカムメッセージを入力してください --></p>
+    <!-- About Preview -->
+    <section class="about-preview">
+      <h2>About Me</h2>
+      <p><!-- ここに自己紹介の短い概要を入力してください --></p>
+      <a class="btn" href="about.html">Learn More</a>
     </section>
-    
-    <!-- 必要に応じて他のセクションを追加可能です -->
+
+    <!-- Projects Preview -->
+    <section class="projects-preview">
+      <h2>Featured Projects</h2>
+      <div class="project-cards">
+        <div class="card">
+          <!-- 画像はご自身のものに差し替えてください -->
+          <img src="your-image1.jpg" alt="Project 1">
+          <div class="card-content">
+            <h3>プロジェクト名1</h3>
+            <p><!-- プロジェクトの概要を入力 --></p>
+            <a class="btn" href="project-detail1.html">View Details</a>
+          </div>
+        </div>
+        <div class="card">
+          <img src="your-image2.jpg" alt="Project 2">
+          <div class="card-content">
+            <h3>プロジェクト名2</h3>
+            <p><!-- プロジェクトの概要を入力 --></p>
+            <a class="btn" href="project-detail2.html">View Details</a>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
 
   <!-- フッター -->
   <footer>
-    <p>&copy; 2025 <!-- ここにあなたの名前を入力してください -->Your Name. All Rights Reserved.</p>
+    <p>&copy; 2025 <!-- ここにあなたの名前を入力 -->Your Name. All Rights Reserved.</p>
   </footer>
 
 </body>
