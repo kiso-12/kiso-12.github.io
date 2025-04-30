@@ -1,67 +1,51 @@
-/* 全体のスタイル */
 body {
-  background-color: lightblue; /* 水色の背景 */
-  margin: 0;
-  font-family: Arial, sans-serif;
-  color: #333;
-  line-height: 1.6;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
 }
 
-/* ヘッダー・メニューエリア */
 header {
-  background-color: rgba(255, 255, 255, 0.85);
-  padding: 20px;
-  position: sticky;
-  top: 0;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background: #333;
+    color: #fff;
+    padding: 1em 0;
 }
 
-nav {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  /* 将来的にメニュー項目を追加するためのスペース */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
 }
 
-nav a {
-  text-decoration: none;
-  color: #333;
-  font-weight: bold;
-  transition: color 0.3s;
+nav ul li {
+    margin: 0 1em;
 }
 
-nav a:hover {
-  color: #555;
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
 }
 
-/* メインコンテンツ */
 main {
-  padding: 20px;
-  max-width: 900px;
-  margin: 0 auto;
+    padding: 2em;
 }
 
-.section {
-  background-color: rgba(255, 255, 255, 0.85);
-  margin-bottom: 40px;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+section {
+    margin-bottom: 2em;
 }
 
-.section h2 {
-  margin-top: 0;
+.recent-work-item, .project-item {
+    border: 1px solid #ddd;
+    padding: 1em;
+    margin-bottom: 1em;
 }
 
-/* フッター */
 footer {
-  background-color: rgba(255, 255, 255, 0.85);
-  text-align: center;
-  padding: 20px;
-  box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
-}
-
-/* 将来的な拡張用のメニュー・プレースホルダースタイル */
-.menu-placeholder {
-  /* ここにメディアクエリなどの詳細なスタイルを追加可能 */
+    text-align: center;
+    padding: 1em;
+    background: #333;
+    color: #fff;
 }
