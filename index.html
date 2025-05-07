@@ -1,51 +1,76 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <title>ポートフォリオ - ホーム</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <nav>
+    <header class="site-header">
+        <div class="logo">MyPortfolio</div>
+        <nav class="navigation">
             <ul>
-                <li><a href="#about">プロフィール</a></li>
-                <li><a href="#projects">近況報告</a></li>
-                <li><a href="#contact">プロジェクト</a></li>
+                <li><a href="index.html" class="active">ホーム</a></li>
+                <li><a href="profile.html">プロフィール</a></li>
+                <li><a href="recent.html">最近の活動</a></li>
+                <li><a href="projects.html">プロジェクト</a></li>
+                <li><a href="achievements.html">実績</a></li>
             </ul>
         </nav>
     </header>
-
-    <section id="hero">
-        <h1>ポートフォリオサイトへようこそ！！</h1>
-        <p>ここでは私の活動を記録していきます。</p>
-    </section>
-
-    <section id="about">
-        <h2>プロフィール</h2>
-        <p>名古屋市立大学 会計ファイナンス学科 ３年</p>
-    </section>
-
-    <section id="projects">
-        <h2>近況報告</h2>
-        <div class="project">
-            <h3>－－－－</h3>
-            <p>今後追加予定</p>
-        </div>
-        <div class="project">
-            <h3>－－－－</h3>
-            <p>今後追加予定</p>
-        </div>
-    </section>
-
-    <section id="contact">
-        <h2>プロジェクト</h2>
-        <p>今後追加予定</p>
-    </section>
-
-    <footer>
-        <p>&copy; 2025 Yoshihito Kiso. All rights reserved.</p>
+    <main class="main-content">
+        <!-- ヒーローセクション -->
+        <section class="hero">
+            <div class="hero-content">
+                <h1>ようこそ！</h1>
+                <p>私のポートフォリオサイトへようこそ。デザインと技術で作り出す世界をご覧ください。</p>
+                <a href="profile.html" class="cta-button">プロフィールを見る</a>
+            </div>
+        </section>
+        
+        <!-- サービス紹介セクション -->
+        <section class="services">
+            <h2>私が提供する価値</h2>
+            <div class="services-grid">
+                <div class="service-item">
+                    <h3>クリエイティブデザイン</h3>
+                    <p>魅力的で機能的なデザインで、ブランドを際立たせます。</p>
+                </div>
+                <div class="service-item">
+                    <h3>レスポンシブ開発</h3>
+                    <p>あらゆるデバイスで快適に閲覧できるウェブサイトを構築します。</p>
+                </div>
+                <div class="service-item">
+                    <h3>UI/UXの最適化</h3>
+                    <p>ユーザー体験を重視した直感的なインターフェースを提供します。</p>
+                </div>
+            </div>
+        </section>
+        
+        <!-- プロジェクト紹介セクション -->
+        <section class="projects-preview">
+            <h2>注目のプロジェクト</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <h3>プロジェクトA</h3>
+                    <p>詳細な説明やリンクをここに記述してください。</p>
+                </div>
+                <div class="project-card">
+                    <h3>プロジェクトB</h3>
+                    <p>詳細な説明やリンクをここに記述してください。</p>
+                </div>
+                <div class="project-card">
+                    <h3>プロジェクトC</h3>
+                    <p>詳細な説明やリンクをここに記述してください。</p>
+                </div>
+            </div>
+            <a href="projects.html" class="cta-button">すべてのプロジェクトを見る</a>
+        </section>
+    </main>
+    <footer class="site-footer">
+        <p>&copy; 2025 あなたの名前</p>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>
