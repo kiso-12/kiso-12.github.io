@@ -1,0 +1,226 @@
+:root {
+    --primary-color: #1E3A8A; /* ダークネイビー */
+    --secondary-color: #64748B; /* ブルーグレー */
+    --background-color: #F1F5F9; /* 明るいグレー */
+    --text-color: #1E293B; /* ダークグレー */
+    --hover-color: #3B82F6; /* 明るいブルー */
+    --accent-color: #FF7F50; /* コーラル */
+}
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    overflow-x: hidden;
+}
+
+header {
+    background: var(--primary-color);
+    color: #fff;
+    padding: 1rem 0;
+    position: fixed;
+    top: -100px; /* 初期位置を画面外に */
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    animation: slideIn 0.8s ease-out forwards; /* スライドインアニメーション */
+}
+
+@keyframes slideIn {
+    to {
+        top: 0;
+    }
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+    color: var(--hover-color);
+    text-decoration: underline;
+}
+
+main {
+    margin-top: 100px;
+    padding: 2rem;
+    opacity: 0;
+    animation: fadeIn 1s ease-out forwards; /* フェードインアニメーション */
+}
+.hero {
+    text-align: center;
+    padding: 4rem 1rem;
+    background-color: var(--primary-color);
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.page-intro {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-top: 2rem;
+    flex-wrap: wrap;
+}
+
+.intro-card {
+    flex: 1 1 calc(33% - 1rem);
+    background: white;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.intro-card h2 {
+    margin-bottom: 1rem;
+    color: var(--primary-color);
+}
+
+.intro-card p {
+    margin-bottom: 1.5rem;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background: var(--secondary-color);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.cta-button:hover {
+    background: var(--hover-color);
+    transform: scale(1.1); /* 軽い拡大効果 */
+}
+
+
+
+.profile {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.profile-card {
+    text-align: center;
+    padding: 1.5rem;
+    background: var(--background-color);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.profile-card img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+
+.profile-card h2 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.additional-info {
+    margin-top: 2rem;
+}
+
+.additional-info h3 {
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+}
+
+.additional-info ul {
+    list-style: disc;
+    padding-left: 1.5rem;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+.coming-soon {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transform: translateY(20px); /* 初期位置を少し下に */
+    opacity: 0;
+    animation: fadeInUp 0.8s ease-out 0.5s forwards; /* 遅延付きフェードイン */
+}
+
+@keyframes fadeInUp {
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.coming-soon h1 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.coming-soon .message {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--accent-color);
+    margin-bottom: 1rem;
+}
+
+.placeholder-image img {
+    width: 100%;
+    max-width: 400px;
+    margin: 1rem auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* ホバー時のアニメーション */
+}
+
+.placeholder-image img:hover {
+    transform: scale(1.05); /* ズームイン */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+footer {
+    text-align: center;
+    background: var(--secondary-color);
+    color: #fff;
+    padding: 1rem 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    opacity: 0;
+    animation: fadeIn 1s ease-out 1s forwards; /* 遅延付きフェードイン */
+}
