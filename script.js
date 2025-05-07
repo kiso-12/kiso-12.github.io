@@ -1,15 +1,12 @@
-// ナビゲーションのインタラクションロジックを追加する場合はここに記述してください
-
-// たとえば、現在のページに応じてナビゲーションを動的に変更する
-document.addEventListener('DOMContentLoaded', () => {
-    const navLinks = document.querySelectorAll('.navigation a');
-    const currentPath = window.location.pathname;
-
-    navLinks.forEach(link => {
-        if (link.getAttribute('href') === currentPath.split('/').pop()) {
-            link.classList.add('active');
-        } else {
-            link.classList.remove('active');
-        }
+document.addEventListener("DOMContentLoaded", () => {
+    const buttons = document.querySelectorAll("a");
+    buttons.forEach(button => {
+        button.addEventListener("mouseover", () => {
+            button.style.transform = "scale(1.1)";
+            button.style.transition = "transform 0.3s";
+        });
+        button.addEventListener("mouseout", () => {
+            button.style.transform = "scale(1)";
+        });
     });
 });
